@@ -1,6 +1,14 @@
-class Sales
-  def initialize(number)
-    @number = number
+puts "Please enter a number"
+
+def sales
+  number = gets.chomp.to_i
+  tax = number * 0.088
+  puts tax
+    if number > 0
+    else
+      puts "Number Invalid, please enter a valid number"
+      return nil
   end
 end
-puts "#{@number} * 8.8"
+
+sales
